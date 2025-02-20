@@ -5,21 +5,21 @@
 class Openv < Formula
   desc "OpenV is a CLI tool to manage environment variables in 1Password"
   homepage ""
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/HINTERLAND-software/openv/releases/download/v0.1.0/openv_Darwin_x86_64.tar.gz"
-      sha256 "a319b4cdb85bd5b36e5ca0eb003342df88460cef2ea299dca2d70ee82b77cbc9"
+      url "https://github.com/HINTERLAND-software/openv/releases/download/v0.2.0/openv_Darwin_x86_64.tar.gz"
+      sha256 "262f9ffb1345b43b843dd5f6a1a1c5ae3fe7542717d437343b209310f8b6ce20"
 
       def install
         bin.install "openv"
       end
     end
     on_arm do
-      url "https://github.com/HINTERLAND-software/openv/releases/download/v0.1.0/openv_Darwin_arm64.tar.gz"
-      sha256 "cba32a6d62796b5c14e70de1d9e17b2ced553f4c9212e619d123be7d57b07f8e"
+      url "https://github.com/HINTERLAND-software/openv/releases/download/v0.2.0/openv_Darwin_arm64.tar.gz"
+      sha256 "9afaf223b8071891931575aa58fb9b7712c95eca5b4765930c41d8bcb144e557"
 
       def install
         bin.install "openv"
@@ -30,8 +30,8 @@ class Openv < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/HINTERLAND-software/openv/releases/download/v0.1.0/openv_Linux_x86_64.tar.gz"
-        sha256 "71e4275c6233653775cadc6a6004d6cf24febf66b9ae8d47acdec7ff325c8a1a"
+        url "https://github.com/HINTERLAND-software/openv/releases/download/v0.2.0/openv_Linux_x86_64.tar.gz"
+        sha256 "db544192e033f89cbf61c2dfc5e518899d8510038b5e0ced54a4752bdaaca7f4"
 
         def install
           bin.install "openv"
@@ -40,8 +40,8 @@ class Openv < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/HINTERLAND-software/openv/releases/download/v0.1.0/openv_Linux_arm64.tar.gz"
-        sha256 "9ace6c7b967bf2da5f1bebea1ff23c65d9dfeef92e3733812bd89f969d0e89f9"
+        url "https://github.com/HINTERLAND-software/openv/releases/download/v0.2.0/openv_Linux_arm64.tar.gz"
+        sha256 "8b274d4dee11d310ae936a214e7ab08d90364c905630cfa4e3ae1678c9397980"
 
         def install
           bin.install "openv"
